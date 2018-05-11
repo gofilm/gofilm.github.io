@@ -57,6 +57,20 @@
         width: 100%;
         height: 100%;
     }
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;
+      background: rgba(255,255,255,0.5);
+    }
+    .swiper-pagination-bullet-active {
+      color:#fff;
+      background: #007aff;
+    }
 </style>
   <style type="text/css">
   
@@ -139,9 +153,7 @@
     <div class="ads-container">
         <div class="ads-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="http://t.cn/R3v62jq" target="blank"><img src="/assets/images/ads/1.jpg"></a></div>
                 <div class="swiper-slide"><a href="http://t.cn/R3v62jq" target="blank"><img src="/assets/images/ads/2.jpg"></a></div>
-                <div class="swiper-slide"><a href="http://t.cn/R3v62jq" target="blank"><img src="/assets/images/ads/3.jpg"></a></div>
             </div>
         </div>
         <span class="ads-tip">广告</span>
@@ -233,6 +245,7 @@
                 <div class="swiper-slide"><a href="http://t.cn/R3v62jq" target="blank"><img src="/assets/images/ads/5.jpg"></a></div>
                 <div class="swiper-slide"><a href="http://t.cn/R3v62jq" target="blank"><img src="/assets/images/ads/6.jpg"></a></div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
         <span class="ads-tip">广告</span>
     </div>
@@ -496,7 +509,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 <script src="https://cdn.bootcss.com/Swiper/4.2.6/js/swiper.min.js"></script>
 <script>
 new Swiper ('.ads-swiper', {
-	autoplay: true
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + (index + 1) + '</span>';
+		},
+	},
 })
 </script>
     
@@ -559,14 +578,6 @@ new Swiper ('.ads-swiper', {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">动作</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">科幻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">恐怖</a>
               </li>
              
@@ -575,15 +586,15 @@ new Swiper ('.ads-swiper', {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">动作</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">科幻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">爱情</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">同性</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">耽美</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -595,15 +606,11 @@ new Swiper ('.ads-swiper', {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">悬疑</a>
+                <a href="javascript:void(0)" class="js-tag color3">同性</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">侦探</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">喜剧</a>
+                <a href="javascript:void(0)" class="js-tag color3">耽美</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -616,6 +623,18 @@ new Swiper ('.ads-swiper', {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">西部</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">悬疑</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">侦探</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">喜剧</a>
               </li>
              
               <li class="article-tag-list-item">
