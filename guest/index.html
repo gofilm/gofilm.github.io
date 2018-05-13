@@ -17,7 +17,7 @@
 <meta property="og:description" content="欢迎交流 本网站没有你需要的片源 下载链接失效 文件无法解压 视频无法播放 意见或建议 其他问题">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="/assets/images/guest.jpg">
-<meta property="og:updated_time" content="2018-04-27T11:07:52.105Z">
+<meta property="og:updated_time" content="2018-05-13T16:27:51.886Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="访客留言板">
 <meta name="twitter:description" content="欢迎交流 本网站没有你需要的片源 下载链接失效 文件无法解压 视频无法播放 意见或建议 其他问题">
@@ -386,18 +386,30 @@
   
 
 
-<div id="valine-container">
+<div id="comment-container">
   <h1 class="article-title">讨论区</h1>
-  <div id="valine-comment"></div>
+  <!-- 来必力 -->
+  <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjQ2Ni8xMzAwMQ==">
+    <script>
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+         if (typeof LivereTower === 'function') { return; }
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+    </script>
+  </div>
 </div>
 <style>
-  #valine-container {
+  #comment-container {
     margin: 10px 30px;
     padding: 20px 10px;
     background-color: #f3f3f3;
   }
   @media screen and (max-width: 800px){
-    #valine-container {
+    #comment-container {
       margin: 10px 0;
     }
   }
@@ -510,19 +522,19 @@ new Swiper ('.ads-swiper', {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">恐怖</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">惊悚</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">剧情</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">战争</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">恐怖</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">惊悚</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -538,7 +550,7 @@ new Swiper ('.ads-swiper', {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">冒险</a>
+                <a href="javascript:void(0)" class="js-tag color3">悬疑</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -566,7 +578,7 @@ new Swiper ('.ads-swiper', {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">悬疑</a>
+                <a href="javascript:void(0)" class="js-tag color3">冒险</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -718,21 +730,6 @@ new Swiper ('.ads-swiper', {
     </div>
 
 </div>
-    <!-- valine评论框 -->
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<script>
-    new Valine({
-        el: '#valine-comment',
-        notify: false, 
-        verify: false, 
-        appId: 'jcggR6WmJaa70o9gJTdQTY5c-gzGzoHsz',
-        appKey: '9zCxtDikoYns6mDmdfDX02fw',
-        placeholder: '求片难？链接失效？不能解压？不能播放？... 都可以在此留言，微臣正在快马加鞭赶来！',
-        path:window.location.pathname, 
-        avatar:'mm'
-    });
-</script>
     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   </div>
 </body>
